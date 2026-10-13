@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/upload-artifact@v4
         with:
-          name: Kesit-0.3.0-beta1-apk
-          path: Kesit-0.3.0-beta1.apk
+          name: Kesit-0.3.1-beta2-apk
+          path: Kesit-0.3.1-beta2.apk
           compression-level: 0
           retention-days: 7
