@@ -1,0 +1,17 @@
+name: Kesit APK transfer
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/kesit-apk-transfer.yml'
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Kesit-0.3.0-beta1-apk
+          path: Kesit-0.3.0-beta1.apk
+          compression-level: 0
+          retention-days: 7
